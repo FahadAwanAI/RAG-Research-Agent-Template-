@@ -1,11 +1,7 @@
 # LangGraph RAG Research Agent Template
-
-[![CI](https://github.com/langchain-ai/rag-research-agent-template/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/langchain-ai/rag-research-agent-template/actions/workflows/unit-tests.yml)
-[![Integration Tests](https://github.com/langchain-ai/rag-research-agent-template/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/langchain-ai/rag-research-agent-template/actions/workflows/integration-tests.yml)
-
 [![Open in - LangGraph Studio](https://img.shields.io/badge/Open_in-LangGraph_Studio-00324d.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4NS4zMzMiIGhlaWdodD0iODUuMzMzIiB2ZXJzaW9uPSIxLjAiIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEzIDcuOGMtNi4zIDMuMS03LjEgNi4zLTYuOCAyNS43LjQgMjQuNi4zIDI0LjUgMjUuOSAyNC41QzU3LjUgNTggNTggNTcuNSA1OCAzMi4zIDU4IDcuMyA1Ni43IDYgMzIgNmMtMTIuOCAwLTE2LjEuMy0xOSAxLjhtMzcuNiAxNi42YzIuOCAyLjggMy40IDQuMiAzLjQgNy42cy0uNiA0LjgtMy40IDcuNkw0Ny4yIDQzSDE2LjhsLTMuNC0zLjRjLTQuOC00LjgtNC44LTEwLjQgMC0xNS4ybDMuNC0zLjRoMzAuNHoiLz48cGF0aCBkPSJNMTguOSAyNS42Yy0xLjEgMS4zLTEgMS43LjQgMi41LjkuNiAxLjcgMS44IDEuNyAyLjcgMCAxIC43IDIuOCAxLjYgNC4xIDEuNCAxLjkgMS40IDIuNS4zIDMuMi0xIC42LS42LjkgMS40LjkgMS41IDAgMi43LS41IDIuNy0xIDAtLjYgMS4xLS44IDIuNi0uNGwyLjYuNy0xLjgtMi45Yy01LjktOS4zLTkuNC0xMi4zLTExLjUtOS44TTM5IDI2YzAgMS4xLS45IDIuNS0yIDMuMi0yLjQgMS41LTIuNiAzLjQtLjUgNC4yLjguMyAyIDEuNyAyLjUgMy4xLjYgMS41IDEuNCAyLjMgMiAyIDEuNS0uOSAxLjItMy41LS40LTMuNS0yLjEgMC0yLjgtMi44LS44LTMuMyAxLjYtLjQgMS42LS41IDAtLjYtMS4xLS4xLTEuNS0uNi0xLjItMS42LjctMS43IDMuMy0yLjEgMy41LS41LjEuNS4yIDEuNi4zIDIuMiAwIC43LjkgMS40IDEuOSAxLjYgMi4xLjQgMi4zLTIuMy4yLTMuMi0uOC0uMy0yLTEuNy0yLjUtMy4xLTEuMS0zLTMtMy4zLTMtLjUiLz48L3N2Zz4=)](https://langgraph-studio.vercel.app/templates/open?githubUrl=https://github.com/langchain-ai/rag-research-agent-template)
 
-This is a starter project to help you get started with developing a RAG research agent using [LangGraph](https://github.com/langchain-ai/langgraph) in [LangGraph Studio](https://github.com/langchain-ai/langgraph-studio).
+This is a starter project to help you get started with developing a RAG research agent using [LangGraph](https://github.com/langchain-ai/langgraph).
 
 ![Graph view in LangGraph studio UI](./static/studio_ui.png)
 
@@ -71,24 +67,13 @@ Elasticsearch (as provided by Elastic) is an open source distributed search and 
 Elasticsearch can be configured as the knowledge base provider for a retrieval agent by being deployed on Elastic Cloud (either as a hosted deployment or serverless project) or on your local environment.
 
 **Elasticsearch Serverless**
-
-1. Signup for a free 14 day trial with [Elasticsearch Serverless](https://cloud.elastic.co/registration?onboarding_token=search&cta=cloud-registration&tech=trial&plcmt=article%20content&pg=langchain).
-2. Get the Elasticsearch URL, found on home under "Copy your connection details".
-3. Create an API key found on home under "API Key".
-4. Copy the URL and API key to your `.env` file created above:
+1. Get the Elasticsearch URL, found on home under "Copy your connection details".
+2. Create an API key found on home under "API Key".
+3. Copy the URL and API key to your `.env` file created above:
 
 ```
 ELASTICSEARCH_URL=<ES_URL>
 ELASTICSEARCH_API_KEY=<API_KEY>
-```
-
-**Elastic Cloud**
-
-1. Signup for a free 14 day trial with [Elastic Cloud](https://cloud.elastic.co/registration?onboarding_token=search&cta=cloud-registration&tech=trial&plcmt=article%20content&pg=langchain).
-2. Get the Elasticsearch URL, found under Applications of your deployment.
-3. Create an API key. See the [official elastic documentation](https://www.elastic.co/search-labs/tutorials/install-elasticsearch/elastic-cloud#creating-an-api-key) for more information.
-4. Copy the URL and API key to your `.env` file created above:
-
 ```
 ELASTICSEARCH_URL=<ES_URL>
 ELASTICSEARCH_API_KEY=<API_KEY>
